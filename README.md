@@ -1,6 +1,6 @@
-# Cerberus — bounded paper artifact (private candidate)
+# Cerberus — bounded public paper artifact
 
-Cerberus studies authority discontinuity across a compromised trust epoch: selected typed state may cross into a new domain, but old authority ancestry may not. This is a **sanitized derivative for paper review**, not the authoritative M0–M8/RP1 historical archive, a production system, or an Active Directory recovery product. The author selected Apache License 2.0 for this repository; it remains private pending a separate public-release decision.
+Cerberus studies authority discontinuity across a compromised trust epoch: selected typed state may cross into a new domain, but old authority ancestry may not. This repository is the **sanitized public paper artifact**, not the authoritative M0–M8/RP1 historical archive, a production system, or a complete Active Directory recovery product. The authoritative historical research archive remains private. Product P1+ material is excluded.
 
 ## Paper
 
@@ -36,8 +36,8 @@ This checks thirteen public-derivative assertions, including eight-property inve
 
 Historical authoritative regression: **642/642 PASS** (private archive, unchanged corpus). Public derivative reproduction: **13/13 checks PASS** in the documented clean run; these are different tests. Historical raw archive materialization: **2,261/2,261 PASS**, **VERIFIED IN AUTHORITATIVE PRIVATE ARCHIVE**. The raw ZIP is not redistributed; this derivative is not byte-identical and cannot reconstruct every historical Windows raw-byte identity. M3 and M4 remain separate historical refs. See [claims and limitations](CLAIMS_AND_LIMITATIONS.md), [provenance](PROVENANCE.md), and [evidence index](PAPER_EVIDENCE_INDEX.md).
 
-No AWS/payment-key-shaped negative fixture was copied into this candidate. `src/nlc/m5/t2/model.py` does contain two explicitly labeled `synthetic-share:` constructor values; they are nonfunctional local test material, not deployment credentials. Private historical tests also use synthetic, nonfunctional credential-shaped rejection inputs. No bundled third-party binary is redistributed here.
+No AWS/payment-key-shaped negative fixture was copied into this artifact. `src/nlc/m5/t2/model.py` does contain two explicitly labeled `synthetic-share:` constructor values; they are nonfunctional local test material, not deployment credentials. Private historical tests also use synthetic, nonfunctional credential-shaped rejection inputs. No bundled third-party binary is redistributed here.
 
 ## Citation and license
 
-Use [CITATION.cff](CITATION.cff) for authorship. The included author-controlled paper-artifact contents are licensed under **Apache License 2.0**; see [LICENSE](LICENSE), [NOTICE](NOTICE), and [license scope](LICENSE_SCOPE.md). This decision applies only to this selected derivative, not to the private historical research archive, Product P1+, excluded materials, or third-party components under their own licenses. The repository is still **private**, not a public release.
+Use [CITATION.cff](CITATION.cff) for authorship. The included author-controlled paper-artifact contents are licensed under **Apache License 2.0**; see [LICENSE](LICENSE), [NOTICE](NOTICE), and [license scope](LICENSE_SCOPE.md). This license applies only to this derivative repository, not to the private historical research archive, Product P1+, excluded materials, or third-party components under their own licenses.
