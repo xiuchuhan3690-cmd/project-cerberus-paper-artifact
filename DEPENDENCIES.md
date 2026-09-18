@@ -1,6 +1,6 @@
 # Dependencies
 
-The tested `python reproduce/check_public.py` quick path uses Python 3.12+ and the standard library only. No Z3, Java, TLC, native DLL, network service, VM, or credential is required for those nine checks. This is a subset of historical reproduction.
+The tested `python reproduce/check_public.py` quick path uses Python 3.12+ and the standard library only. No Z3, Java, TLC, native DLL, network service, VM, or credential is required for those thirteen checks. This is a subset of historical reproduction. Apache-2.0 applies to the author-controlled contents included in this derivative; the upstream tools below keep their own licenses and are not bundled.
 
 Historical optional dependencies, **not bundled** here:
 

@@ -8,4 +8,5 @@ authors:
     affiliation: "Independent Researcher, Japan"
     email: "xiuchuhan3690@gmail.com"
 repository-code: "https://github.com/xiuchuhan3690-cmd/project-cerberus-paper-artifact"
+license: "Apache-2.0"
 version: "private-candidate"

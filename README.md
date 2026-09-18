@@ -1,6 +1,6 @@
 # Cerberus — bounded paper artifact (private candidate)
 
-Cerberus studies authority discontinuity across a compromised trust epoch: selected typed state may cross into a new domain, but old authority ancestry may not. This is a **sanitized derivative for paper review**, not the authoritative M0–M8/RP1 historical archive, a production system, or an Active Directory recovery product. The repository is private pending author license and release decisions.
+Cerberus studies authority discontinuity across a compromised trust epoch: selected typed state may cross into a new domain, but old authority ancestry may not. This is a **sanitized derivative for paper review**, not the authoritative M0–M8/RP1 historical archive, a production system, or an Active Directory recovery product. The author selected Apache License 2.0 for this repository; it remains private pending a separate public-release decision.
 
 ## Paper
 
@@ -40,4 +40,4 @@ No AWS/payment-key-shaped negative fixture was copied into this candidate. `src/
 
 ## Citation and license
 
-Use [CITATION.cff](CITATION.cff) for authorship. **No public reuse license has been selected.** See [author license decision](AUTHOR_LICENSE_DECISION_REQUIRED.md). Do not interpret private candidate availability as permission to use or redistribute.
+Use [CITATION.cff](CITATION.cff) for authorship. The included author-controlled paper-artifact contents are licensed under **Apache License 2.0**; see [LICENSE](LICENSE), [NOTICE](NOTICE), and [license scope](LICENSE_SCOPE.md). This decision applies only to this selected derivative, not to the private historical research archive, Product P1+, excluded materials, or third-party components under their own licenses. The repository is still **private**, not a public release.
