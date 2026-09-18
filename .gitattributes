@@ -1,0 +1,2 @@
+# Keep derivative selections byte-preserving; no checkout newline conversion.
+* -text

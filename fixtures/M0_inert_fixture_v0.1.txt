@@ -1,0 +1,5 @@
+CERBERUS_SYNTHETIC_TEST
+fixture_id=CERBERUS-M0-INERT-001
+credential=CERBERUS_SYNTHETIC_TEST_CRED_v1_LOCAL_ONLY_001
+content=Inert plain-text material for M0 validation only. No callback, executable, macro, exploit, or personal identifier.
+

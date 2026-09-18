@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Cite the paper and the immutable artifact revision when publicly released."
+title: "Cerberus: Authority-Sterile Recovery Across Compromised Trust Epochs — Paper Artifact"
+type: software
+authors:
+  - family-names: "XIU"
+    given-names: "CHUHAN"
+    affiliation: "Independent Researcher, Japan"
+    email: "xiuchuhan3690@gmail.com"
+repository-code: "https://github.com/xiuchuhan3690-cmd/project-cerberus-paper-artifact"
+version: "private-candidate"
