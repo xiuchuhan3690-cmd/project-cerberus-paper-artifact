@@ -13,6 +13,8 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "src"))
 
 from nlc.formal.model import AuthorityDomain, AdmissionDecision  # noqa: E402
+from nlc.m6.t1.constructor import RecoveryReject, RecoveryStore, slot  # noqa: E402
+from nlc.m6.t1.fixtures import baseline as recovery_baseline  # noqa: E402
 from verifier.rp1_verifier import PROPERTIES, verify  # noqa: E402
 
 EVIDENCE = ROOT / "evidence"
@@ -94,6 +96,27 @@ class PublicDerivativeChecks(unittest.TestCase):
                 data = json.loads(path.read_text(encoding="utf-8"))
                 self.assertEqual(property_id, data["property_id"])
                 self.assertGreater(data["violation_count"], 0)
+
+    def test_11_recovery_retry_single_output(self) -> None:
+        material, templates = recovery_baseline()
+        store = RecoveryStore()
+        first = store.recover(material, templates, "Reviewer-A")
+        second = store.recover(material, templates, "Reviewer-B")
+        self.assertEqual((first["slot_id"], first["result_bytes"]), (second["slot_id"], second["result_bytes"]))
+        self.assertEqual(1, store.metrics(first["slot_id"]).mint_count)
+
+    def test_12_unknown_settlement_holds(self) -> None:
+        material, templates = recovery_baseline()
+        material["settlement_context"]["state"] = "UNKNOWN"
+        result = RecoveryStore().recover(material, templates, "Reviewer")
+        self.assertEqual("HOLD", result["verdict"])
+        self.assertIsNone(result["result_bytes"])
+
+    def test_13_old_authority_carrier_rejected(self) -> None:
+        material, _ = recovery_baseline()
+        material["sterile_checkpoint_identity"][0]["value"]["old_token"] = "synthetic-old-token"
+        with self.assertRaises(RecoveryReject):
+            slot(material)
 
 
 if __name__ == "__main__":

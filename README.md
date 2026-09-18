@@ -18,7 +18,7 @@ Python 3.12+ (standard library only for the quick checks):
 python reproduce/check_public.py
 ```
 
-This checks ten public-derivative assertions, including eight-property inventory, copied-record structural verification, TC-3 values, three negative mutations, and inspection of three original counterexample records. See [reproduction instructions](reproduce/README.md) and [measured public result](PUBLIC_REPRODUCTION_REPORT.md). It does **not** run the private historical 642-test corpus.
+This checks thirteen public-derivative assertions, including eight-property inventory, copied-record structural verification, TC-3 values, three negative mutations, inspection of three original counterexample records, and three executed recovery/hold/old-carrier checks. See [reproduction instructions](reproduce/README.md) and [measured public result](PUBLIC_REPRODUCTION_REPORT.md). It does **not** run the private historical 642-test corpus.
 
 ## Artifact map
 
@@ -34,7 +34,7 @@ This checks ten public-derivative assertions, including eight-property inventory
 
 ## Evidence boundary
 
-Historical authoritative regression: **642/642 PASS** (private archive, unchanged corpus). Public derivative reproduction: **10/10 checks PASS** in the documented clean run; these are different tests. Historical raw archive materialization: **2,261/2,261 PASS**, **VERIFIED IN AUTHORITATIVE PRIVATE ARCHIVE**. The raw ZIP is not redistributed; this derivative is not byte-identical and cannot reconstruct every historical Windows raw-byte identity. M3 and M4 remain separate historical refs. See [claims and limitations](CLAIMS_AND_LIMITATIONS.md), [provenance](PROVENANCE.md), and [evidence index](PAPER_EVIDENCE_INDEX.md).
+Historical authoritative regression: **642/642 PASS** (private archive, unchanged corpus). Public derivative reproduction: **13/13 checks PASS** in the documented clean run; these are different tests. Historical raw archive materialization: **2,261/2,261 PASS**, **VERIFIED IN AUTHORITATIVE PRIVATE ARCHIVE**. The raw ZIP is not redistributed; this derivative is not byte-identical and cannot reconstruct every historical Windows raw-byte identity. M3 and M4 remain separate historical refs. See [claims and limitations](CLAIMS_AND_LIMITATIONS.md), [provenance](PROVENANCE.md), and [evidence index](PAPER_EVIDENCE_INDEX.md).
 
 No AWS/payment-key-shaped negative fixture was copied into this candidate. `src/nlc/m5/t2/model.py` does contain two explicitly labeled `synthetic-share:` constructor values; they are nonfunctional local test material, not deployment credentials. Private historical tests also use synthetic, nonfunctional credential-shaped rejection inputs. No bundled third-party binary is redistributed here.
 
